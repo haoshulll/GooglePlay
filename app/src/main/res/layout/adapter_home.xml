@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_list_item"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:orientation="vertical">
+
+        <!--第一行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_default"
+                android:id="@+id/iv_icon"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_title"
+                    android:textSize="16sp"
+                    android:text="FIFAOnlie3"
+                    android:id="@+id/tv_name"/>
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:progressDrawable="@drawable/ratingbar_small"
+                    android:rating="3"
+                    android:isIndicator="true"
+                    android:id="@+id/rb_star"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/txt_small"
+                    android:textSize="13sp"
+                    android:id="@+id/tv_size"
+                    android:text="24.7M"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/txt_small"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+        </View>
+
+        <TextView
+            android:padding="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/txt_small"
+            android:textSize="13sp"
+            android:singleLine="true"
+            android:id="@+id/tv_des"
+            android:text="这是一款经典好玩的手机足球游戏，数据与PC版交互,让你体验电脑游戏的快感"/>
+
+    </LinearLayout>
+
+</LinearLayout>

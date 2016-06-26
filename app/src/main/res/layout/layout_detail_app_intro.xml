@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="@drawable/grid_item_bg_normal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:textSize="16sp"
+        android:textColor="@color/txt_title"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="简介"
+        android:id="@+id/tv_des"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textSize="15sp"
+        android:textColor="@color/txt_small"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="作者"
+            android:id="@+id/tv_author"
+            android:textSize="16sp"
+            android:textColor="@color/txt_title"
+            />
+        
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_intro_arrow"
+            android:src="@drawable/arrow_down"/>
+    </LinearLayout>
+
+</LinearLayout>
